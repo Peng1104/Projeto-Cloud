@@ -127,6 +127,28 @@ Você também pode executar a aplicação usando Docker:
     docker-compose up
     ```
 
+## Publicação no Docker
+
+Para publicar a imagem no Docker Hub, foi ultilizados os sequintes comandos:
+
+1. Faça login no Docker Hub:
+  ```sh
+  docker login
+  ```
+
+2. Construa a imagem Docker:
+  ```sh
+  docker build -t peng1104/projeto_cloud:v1.0.1 .
+  ```
+
+3. Faça o push da imagem para o Docker Hub:
+  ```sh
+  docker push peng1104/projeto_cloud:v1.0.1
+  ```
+
+Certifique-se de substituir `seu_usuario_docker` pelo seu nome de usuário no Docker Hub.
+
+
 ## Screenshots dos Endpoints
 
 ### Tela de Registro
@@ -137,6 +159,10 @@ Você também pode executar a aplicação usando Docker:
 
 ### Tela de Consulta
 ![Consulta](docs/imgs/consultae.png)
+
+## Video demonstrativo
+
+[Assista ao vídeo demonstrativo aqui](https://youtu.be/rpISwUK8aME)
 
 ## Aluno
 
