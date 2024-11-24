@@ -158,7 +158,7 @@ Certifique-se de substituir `seu_usuario_docker` pelo seu nome de usuário no Do
 ![Login](docs/imgs/login.png)
 
 ### Tela de Consulta
-![Consulta](docs/imgs/consultae.png)
+![Consulta](docs/imgs/consultar.png)
 
 ## Video demonstrativo
 
