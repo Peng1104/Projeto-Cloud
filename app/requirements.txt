@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+greenlet
+sqlalchemy
+asyncpg
+passlib[bcrypt]
+python-jose
+pandas
