@@ -11,7 +11,7 @@ from urllib.parse import unquote_plus
 from pandas import DataFrame
 import pandas as pd
 
-__GAME_WORLD = "br134"
+__GAME_WORLD = "br137"
 __COMBAT_COLUMNS = ["rank", "player_id", "points"]
 __COMBAT_DYPES = {"rank": int, "player_id": int, "points": int}
 
