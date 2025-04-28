@@ -3,6 +3,6 @@ uvicorn
 greenlet
 sqlalchemy
 asyncpg
-passlib[bcrypt]
+passlib
 python-jose
 pandas

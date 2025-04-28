@@ -17,8 +17,9 @@ from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker
 from web_app.db_models import User, BASE #pylint: disable=unused-import
 
-__ENGINE = create_async_engine(f"postgresql+asyncpg://{os.getenv("POSTGRES_USER")}:{
-    os.getenv("POSTGRES_PASSWORD")}@database:{os.getenv("POSTGRES_PORT")}/{os.getenv("POSTGRES_DB")}")
+__ENGINE = create_async_engine(f"postgresql+asyncpg://{os.getenv("POSTGRES_USER", "postgres")}:{ \
+    os.getenv("POSTGRES_PASSWORD", "password")}@{os.getenv("POSTGRES_HOST", "localhost")}:{ \
+    os.getenv("POSTGRES_PORT", "5432")}/{os.getenv("POSTGRES_DB", "postgres")}")
 
 __SESSION = sessionmaker(__ENGINE, class_=AsyncSession, expire_on_commit=False)
 

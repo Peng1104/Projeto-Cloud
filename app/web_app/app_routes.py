@@ -26,7 +26,7 @@ from web_app.app_models import UserCreate, UserLogin, Token
 from web_app.jwt_manager import encode, validate_token
 from web_app.grepolis_data import get_players_data
 
-__PWD_CRYPT = CryptContext(schemes=["bcrypt"], deprecated="auto")
+__PWD_CRYPT = CryptContext(schemes=["sha512_crypt"], deprecated="auto")
 
 ROUTER = APIRouter()
 

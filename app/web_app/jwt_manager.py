@@ -14,8 +14,8 @@ from fastapi import Depends, HTTPException
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 
 __SECURITY = HTTPBearer()
-__JWT_SECRET = os.getenv("JWT_SECRET")
-__JWT_ALGORITHM = "HS256"
+__JWT_SECRET = os.getenv("JWT_SECRET", "secret")
+__JWT_ALGORITHM = "HS512"
 
 
 def encode(email: str) -> str:

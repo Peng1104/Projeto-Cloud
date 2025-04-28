@@ -78,7 +78,7 @@ Disponível em: [peng1104/projeto_cloud](https://hub.docker.com/r/peng1104/proje
     ```yaml
     services:
       app:
-        image: peng1104/projeto_cloud:v1.0.2
+        image: peng1104/projeto_cloud:v1.0.4
         ports:
           - "8080:8080"
         volumes:
@@ -101,17 +101,18 @@ Disponível em: [peng1104/projeto_cloud](https://hub.docker.com/r/peng1104/proje
     ```
 2. Configure as variáveis de ambiente no arquivo `.env`. Exemplo:
     ```env
+    POSTGRES_HOST=postgres
+    POSTGRES_PORT=5432
+    POSTGRES_DB=db_app
     POSTGRES_USER=humberto
     POSTGRES_PASSWORD=gabriela
-    POSTGRES_DB=db_app
-    POSTGRES_PORT=5432
 
     APP_PORT=8080
     JWT_SECRET=750fc55c0a404f8485580fd4bbcf6d7e
     ```
 3. Execute a aplicação:
     ```sh
-    docker run --env-file .env -p 8080:8080 peng1104/projeto_cloud:v1.0.2
+    docker run --env-file .env -p 8080:8080 peng1104/projeto_cloud:v1.0.4
     ```
 
 ## Docker
@@ -138,12 +139,12 @@ Para publicar a imagem no Docker Hub, foi ultilizados os sequintes comandos:
 
 2. Construa a imagem Docker:
   ```sh
-  docker build -t peng1104/projeto_cloud:v1.0.2 .
+  docker build -t peng1104/projeto_cloud:v1.0.4 .
   ```
 
 3. Faça o push da imagem para o Docker Hub:
   ```sh
-  docker push peng1104/projeto_cloud:v1.0.2
+  docker push peng1104/projeto_cloud:v1.0.4
   ```
 
 Certifique-se de substituir `seu_usuario_docker` pelo seu nome de usuário no Docker Hub.
