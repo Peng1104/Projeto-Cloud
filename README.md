@@ -78,7 +78,7 @@ Disponível em: [peng1104/projeto_cloud](https://hub.docker.com/r/peng1104/proje
     ```yaml
     services:
       app:
-        image: peng1104/projeto_cloud:v1.0.4
+        image: peng1104/projeto_cloud:v1.0.5
         ports:
           - "8080:8080"
         volumes:
@@ -112,7 +112,7 @@ Disponível em: [peng1104/projeto_cloud](https://hub.docker.com/r/peng1104/proje
     ```
 3. Execute a aplicação:
     ```sh
-    docker run --env-file .env -p 8080:8080 peng1104/projeto_cloud:v1.0.4
+    docker run --env-file .env -p 8080:8080 peng1104/projeto_cloud:v1.0.5
     ```
 
 ## Docker
@@ -139,12 +139,12 @@ Para publicar a imagem no Docker Hub, foi ultilizados os sequintes comandos:
 
 2. Construa a imagem Docker:
   ```sh
-  docker build -t peng1104/projeto_cloud:v1.0.4 .
+  docker build -t peng1104/projeto_cloud:v1.0.5 .
   ```
 
 3. Faça o push da imagem para o Docker Hub:
   ```sh
-  docker push peng1104/projeto_cloud:v1.0.4
+  docker push peng1104/projeto_cloud:v1.0.5
   ```
 
 Certifique-se de substituir `seu_usuario_docker` pelo seu nome de usuário no Docker Hub.

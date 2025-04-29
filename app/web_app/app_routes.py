@@ -18,6 +18,7 @@ Variáveis:
 from passlib.context import CryptContext
 from fastapi import HTTPException, Depends, APIRouter
 from fastapi.responses import HTMLResponse
+from socket import gethostname
 from sqlalchemy.future import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from web_app.db_models import User
@@ -101,3 +102,13 @@ async def consultar(payload: dict = Depends(validate_token)) -> HTMLResponse:  #
         </body>
     </html>
     """)
+
+
+@ROUTER.get("/health-check", status_code=200)
+async def health_check():
+    """
+    Health check endpoint to verify the status of the server.
+    Returns:
+        dict: A dictionary containing the hostname of the server.
+    """
+    return {"server_hostname": gethostname()}
