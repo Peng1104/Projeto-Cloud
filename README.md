@@ -1,4 +1,4 @@
-# Projeto de Computação Embarcada
+# Projeto de Computação em Nuvem
 
 Este projeto é uma API FastAPI para manipulação de usuários e consulta de dados do jogo Grepolis.
 
