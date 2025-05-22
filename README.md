@@ -161,9 +161,15 @@ Certifique-se de substituir `seu_usuario_docker` pelo seu nome de usuário no Do
 ### Tela de Consulta
 ![Consulta](docs/imgs/consultar.png)
 
-## Video demonstrativo
+## Videos demonstrativo
 
-[Assista ao vídeo demonstrativo aqui](https://youtu.be/rpISwUK8aME)
+### Versão Local
+
+[Versão Local](https://youtu.be/rpISwUK8aME)
+
+### Versão AWS Lightsail
+
+[Versão AWS Lightsail](https://youtu.be/1uKJCzuqf50)
 
 ## Aluno
 
